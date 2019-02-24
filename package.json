@@ -10,13 +10,15 @@
     "gatsby-plugin-manifest": "^2.0.19",
     "gatsby-plugin-offline": "^2.0.24",
     "gatsby-plugin-react-helmet": "^3.0.6",
+    "gatsby-plugin-s3": "^0.2.4",
     "gatsby-plugin-sharp": "^2.0.22",
     "gatsby-source-filesystem": "^2.0.22",
     "gatsby-transformer-sharp": "^2.1.14",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
@@ -26,6 +28,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "deploy": "gatsby-plugin-s3 deploy",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
